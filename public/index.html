@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AI</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- style="background-image: url('./img/hero-bg.png');" -->
+
+<body class="overflow-x-hidden">
+	<div class="relative bg-center w-full bg-cover bg-ai-custom-blue -mb-px">
+		<div class="w-full relative z-30 bg-hero-bg">
+			<header class="py-6 w-full relative">
+				<div class="bg-ai-pink-blur z-0 w-72 h-72 absolute top-0 right-0 blur-pink">
+				</div>
+				<div class="relative z-10 max-w-7xl mx-auto px-5 w-full flex items-center md:justify-between">
+					<a href="#" class="flex hover:opacity-80 active:opacity-60 transition ease-linear">
+						<img class="md:w-16 w-11" src="./img/logo.png" alt="website logo">
+					</a>
+					<ul class="gap-14 hidden md:flex">
+						<li>
+							<a class="font-medium text-sm text-white opacity-90 hover:opacity-80 active:opacity-60 transition ease-linear"
+								href="#">
+								Home
+							</a>
+						</li>
+						<li>
+							<a class="font-medium text-sm text-white opacity-90 hover:opacity-80 active:opacity-60 transition ease-linear"
+								href="#">
+								Products
+							</a>
+						</li>
+						<li>
+							<a class="font-medium text-sm text-white opacity-90 hover:opacity-80 active:opacity-60 transition ease-linear"
+								href="#">
+								Blogs
+							</a>
+						</li>
+					</ul>
+					<a class="px-5 pt-2 pb-3 rounded-full text-sm border border-ai-white-300 hover:opacity-80 active:opacity-60 transition ease-linear text-white  ml-auto md:ml-0"
+						href="#">
+						Log in
+					</a>
+					<button class="toggleMenu flex md:hidden items-center ml-6">
+						<svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M24.4609 11.3101L8.25703 11.3101" stroke="white" stroke-width="1.93512" stroke-linecap="square"
+								stroke-linejoin="round" />
+							<path d="M24.5469 1.80762H1.40957" stroke="white" stroke-width="1.93512" stroke-linecap="square"
+								stroke-linejoin="round" />
+							<path d="M24.5469 20.1543H1.40957" stroke="white" stroke-width="1.93512" stroke-linecap="square"
+								stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+			</header>
+
+			<!-- mobile menu -->
+			<div
+				class="menu absolute top-0 left-0 z-50 w-full rounded-lg backdrop-blur-custom bg-ai-white-40 border border-ai-white-300 -translate-x-full transition-all ease-linear py-6 px-5">
+				<div class="flex items-center justify-between">
+					<a href="#" class="flex hover:opacity-80 active:opacity-60 transition ease-linear">
+						<img class="md:w-16 w-11" src="./img/logo.png" alt="website logo">
+					</a>
+					<button class="toggleMenu text-white">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<ul class="flex flex-col items-center gap-6 pt-4">
+					<li>
+						<a class="font-medium text-sm text-white opacity-90 hover:opacity-80 active:opacity-60 transition ease-linear"
+							href="#">
+							Home
+						</a>
+					</li>
+					<li>
+						<a class="font-medium text-sm text-white opacity-90 hover:opacity-80 active:opacity-60 transition ease-linear"
+							href="#">
+							Products
+						</a>
+					</li>
+					<li>
+						<a class="font-medium text-sm text-white opacity-90 hover:opacity-80 active:opacity-60 transition ease-linear"
+							href="#">
+							Blogs
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- overlay -->
+			<div class="toggleMenu overlay hidden fixed inset-0 z-40 backdrop-blur-sm backdrop-opacity-70 bg-ai-white-40">
+			</div>
+
+			<!-- hero -->
+			<section class="w-full md:pt-24 pt-8 pb-6">
+				<div class="max-w-7xl mx-auto px-5 text-left md:text-center relative">
+					<div
+						class="bg-ai-blue-blur -translate-x-1/2 -translate-y-1/2  w-72 h-72 absolute top-1/2 left-1/2 blur-pink z-0">
+					</div>
+					<p
+						class="inline font-medium md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#EF23F3] to-[#3733FF] uppercase md:mb-4 mb-3">
+						Explore the power of AI</p>
+					<h1 class="md:font-semibold font-light md:text-53 text-3xl  text-white opacity-90 md:mb-5 mb-4"><strong
+							class="md:font-extrabold font-semibold">Power
+							up</strong> your business with AI
+					</h1>
+					<p class="max-w-xl mx-auto text-sm md:text-lg text-white opacity-60 sm:mb-10">Our expert AI consulting
+						services will
+						help you
+						harness the full potential of artificial
+						intelligence and drive your business forward
+					</p>
+					<button
+						class="hidden sm:inline cursor-pointer border border-ai-white-300 hover:opacity-80 active:opacity-60 transition ease-linear rounded-full text-white bg-btn-gradient w-full sm:w-auto relative z-10 py-3 px-6">Contact
+						Us</button>
+				</div>
+			</section>
+		</div>
+
+		<div id="animation" class="relative w-full h-60 md:h-80 lg:h-96 -mt-16 overflow-hidden">
+			<div class="absolute -bottom-1 left-0 w-full h-full bg-gradient-to-t from-[#05021C] to-[#060324]/0">
+			</div>
+		</div>
+
+		<div class="sm:hidden px-5 pt-4">
+			<button
+				class="cursor-pointer border border-ai-white-300  rounded-full text-white bg-btn-gradient  w-full relative z-10 py-3 px-6">ContactUs</button>
+		</div>
+
+	</div>
+
+	<!-- Focus On Solving Bigger Problems -->
+	<section class="md:pt-16 pt-20 md:pb-28 pb-6 bg-ai-custom-blue">
+		<div class="max-w-7xl mx-auto px-5 relative ">
+			<div class="bg-ai-blue-blur  w-72 h-72 absolute top-16 -left-96 blur-pink">
+			</div>
+			<div class="text-center max-w-2xl mx-auto md:mb-20 mb-9">
+				<h2 class="font-medium md:text-40  text-white opacity-90 md:mb-5 mb-4 text-xl capitalize">Focus on solving
+					bigger
+					problems
+				</h2>
+				<p class="text-sm md:text-lg text-white opacity-60 mb-10">Our expert AI consulting services will help
+					you
+					harness the full potential of artificial intelligence and drive your business forward
+				</p>
+			</div>
+			<div class="grid md:grid-cols-3 gap-4 grid-cols-1 ">
+				<div
+					class="border border-ai-white-200 rounded-xl md:pt-10 md:pb-8 md:pl-8 md:pr-12 flex flex-col pt-8 pl-9 pr-10 pb-6">
+					<img class="md:w-12 md:h-12 w-11 h-11 md:mb-8 mb-7" src="./img/Scan.svg" alt="">
+					<h3 class="font-medium text-xl text-white opacity-80 mb-3 ">Fine-tune diffusion models</h3>
+					<p class="md:text-sm text-xs text-white opacity-50 md:mb-12 mb-9">Our team can help you optimize
+						your AI diffusion models to improve performance and reduce costs.
+					</p>
+					<a href="#"
+						class="inline-flex md:gap-8  gap-6 items-center mt-auto hover:opacity-80 active:opacity-60 transition ease-linear">
+						<span class="inline-block md:text-sm font-semibold text-white text-xs ">Learn More</span>
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1_53)">
+								<path d="M6.13281 3.80005L11.1385 8.80578L6.13281 13.8115" stroke="white" stroke-width="1.33486"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+							<defs>
+								<clipPath id="clip0_1_53">
+									<rect width="16.0183" height="16.0183" fill="white" transform="translate(0.117188 0.796631)" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+				<div
+					class="border border-ai-white-200 rounded-xl md:pt-10 md:pb-8 md:pl-8 md:pr-12 flex flex-col pt-8 pl-9 pr-10 pb-6 ">
+					<img class="md:w-12 md:h-12 w-11 h-11 md:mb-8 mb-7" src="./img/Scan.svg" alt="">
+					<h3 class="font-medium text-xl text-white opacity-80 mb-3 ">Roll out your own large language models
+					</h3>
+					<p class="md:text-sm text-xs text-white opacity-50 md:mb-12 mb-9">With our assistance, you can build
+						and deploy custom language models that are tailored to your specific needs.
+					</p>
+					<a href="#"
+						class="inline-flex md:gap-8  gap-6 items-center mt-auto hover:opacity-80 active:opacity-60 transition ease-linear">
+						<span class="inline-block md:text-sm font-semibold text-white text-xs ">Learn More</span>
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1_53)">
+								<path d="M6.13281 3.80005L11.1385 8.80578L6.13281 13.8115" stroke="white" stroke-width="1.33486"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+							<defs>
+								<clipPath id="clip0_1_53">
+									<rect width="16.0183" height="16.0183" fill="white" transform="translate(0.117188 0.796631)" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+				<div
+					class="border border-ai-white-200 rounded-xl md:pt-10 md:pb-8 md:pl-8 md:pr-12 flex flex-col pt-8 pl-9 pr-10 pb-6 ">
+					<img class="md:w-12 md:h-12 w-11 h-11 md:mb-8 mb-7" src="./img/Scan.svg" alt="">
+					<h3 class="font-medium text-xl text-white opacity-80 mb-3 ">Fine-tune your large language models
+					</h3>
+					<p class="md:text-sm text-xs text-white opacity-50 md:mb-12 mb-9">Our AI experts can fine-tune your
+						language models to achieve greater accuracy and efficiency
+					</p>
+					<a href="#"
+						class="inline-flex md:gap-8  gap-6 items-center mt-auto hover:opacity-80 active:opacity-60 transition ease-linear">
+						<span class="inline-block md:text-sm font-semibold text-white text-xs ">Learn More</span>
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1_53)">
+								<path d="M6.13281 3.80005L11.1385 8.80578L6.13281 13.8115" stroke="white" stroke-width="1.33486"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+							<defs>
+								<clipPath id="clip0_1_53">
+									<rect width="16.0183" height="16.0183" fill="white" transform="translate(0.117188 0.796631)" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Use Sensitive Data Without Sacrificing Privacy -->
+	<section style="background-image: url('./img/section-bg.png');"
+		class="bg-ai-custom-blue lg:overflow-visible bg-cover pt-6 md:pt-20 pb-36 md:pb-32">
+		<div class="max-w-7xl mx-auto px-5 relative">
+			<div class="text-center max-w-2xl mx-auto md:mb-16 mb-8 ">
+				<div
+					class="bg-ai-pink-blur  md:block    w-72 h-72 absolute md:-top-24 top-7 right-0 xl:-right-20  blur-pink z-0">
+				</div>
+				<h2 class="font-medium md:text-40 text-xl text-white/90 capitalize md:mb-5 mb-4">Use sensitive data
+					without sacrificing
+					privacy
+				</h2>
+				<p class="text-sm md:text-lg text-white opacity-60 mb-10">Run you models on your own servers and
+					make sure that
+					you have full ownership of your data.
+				</p>
+			</div>
+			<div
+				class="backdrop-blur-custom bg-ai-white-40 border border-ai-white-300  md:p-5 pt-7 md:pt-5 pb-5  p-2 rounded-xl md:pl-20 flex gap-4 justify-between">
+				<div class="md:max-w-md w-full md:pt-11">
+					<div class="mb-10 md:mb-10 px-4 ">
+						<p
+							class="font-semibold mb-3 text-sm md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#EF23F3] via-[#3733FF] to-[#3733FF] uppercase">
+							The power of AI</p>
+						<h3 class="font-medium text-xl md:text-3xl md:mb-5 mb-3 text-white opacity-90 ">Train and deploy
+							your <br> own
+							models
+						</h3>
+						<p class="md:text-base text-white opacity-60 text-sm  ">Our platform provides an intuitive
+							interface
+							that
+							makes it easy for you to upload your data, train your model, and deploy it.
+						</p>
+					</div>
+					<div class="relative md:hidden block w-full border border-ai-white-200 rounded-lg overflow-hidden mb-6">
+						<button class="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+							<svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.54">
+									<circle cx="33.0675" cy="32.7177" r="31.832" stroke="white" stroke-width="1.29926" />
+									<g filter="url(#filter0_b_1_88)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M33.0528 59.2155C47.6874 59.2155 59.551 47.3519 59.551 32.7174C59.551 18.0829 47.6874 6.21924 33.0528 6.21924C18.4183 6.21924 6.55469 18.0829 6.55469 32.7174C6.55469 47.3519 18.4183 59.2155 33.0528 59.2155ZM43.0667 33.8426C43.9329 33.3425 43.9329 32.0923 43.0667 31.5922L29.0142 23.4789C28.148 22.9789 27.0653 23.604 27.0653 24.6041V40.8307C27.0653 41.8308 28.148 42.4559 29.0142 41.9558L43.0667 33.8426Z"
+											fill="white" />
+									</g>
+								</g>
+								<defs>
+									<filter id="filter0_b_1_88" x="0.707998" y="0.372549" width="64.6897" height="64.6897"
+										filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feGaussianBlur in="BackgroundImageFix" stdDeviation="2.92334" />
+										<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_88" />
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_88" result="shape" />
+									</filter>
+								</defs>
+							</svg>
+						</button>
+						<img class="w-full h-full object-cover " src="./img/video-img.png" alt="">
+					</div>
+					<ul class="flex gap-4 flex-col px-4 md:px-0">
+						<li class="flex items-center gap-4 ">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_78)">
+									<path d="M4.03906 12.4004L8.51641 16.8777L18.7503 6.6438" stroke="white" stroke-width="1.27924"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_78">
+										<rect width="20.4679" height="20.4679" fill="white" transform="translate(0.84375 0.887695)" />
+									</clipPath>
+								</defs>
+							</svg>
+							<p class="md:text-xl text-white text-sm leading-7  ">Complete Data Control </p>
+						</li>
+						<li class="flex items-center gap-4 ">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_78)">
+									<path d="M4.03906 12.4004L8.51641 16.8777L18.7503 6.6438" stroke="white" stroke-width="1.27924"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_78">
+										<rect width="20.4679" height="20.4679" fill="white" transform="translate(0.84375 0.887695)" />
+									</clipPath>
+								</defs>
+							</svg>
+							<p class="md:text-xl text-white text-sm leading-7  ">Easy-to-Use Platform </p>
+						</li>
+						<li class="flex items-center gap-4 ">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_78)">
+									<path d="M4.03906 12.4004L8.51641 16.8777L18.7503 6.6438" stroke="white" stroke-width="1.27924"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_78">
+										<rect width="20.4679" height="20.4679" fill="white" transform="translate(0.84375 0.887695)" />
+									</clipPath>
+								</defs>
+							</svg>
+							<p class="md:text-xl text-white text-sm leading-7  ">Customized solutions to fit your
+								business
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="relative md:block hidden max-w-md border border-ai-white-200 rounded-lg overflow-hidden">
+					<button
+						class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hover:opacity-80 active:opacity-60 transition ease-linear">
+						<svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.54">
+								<circle cx="33.0675" cy="32.7177" r="31.832" stroke="white" stroke-width="1.29926" />
+								<g filter="url(#filter0_b_1_88)">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M33.0528 59.2155C47.6874 59.2155 59.551 47.3519 59.551 32.7174C59.551 18.0829 47.6874 6.21924 33.0528 6.21924C18.4183 6.21924 6.55469 18.0829 6.55469 32.7174C6.55469 47.3519 18.4183 59.2155 33.0528 59.2155ZM43.0667 33.8426C43.9329 33.3425 43.9329 32.0923 43.0667 31.5922L29.0142 23.4789C28.148 22.9789 27.0653 23.604 27.0653 24.6041V40.8307C27.0653 41.8308 28.148 42.4559 29.0142 41.9558L43.0667 33.8426Z"
+										fill="white" />
+								</g>
+							</g>
+							<defs>
+								<filter id="filter0_b_1_88" x="0.707998" y="0.372549" width="64.6897" height="64.6897"
+									filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feGaussianBlur in="BackgroundImageFix" stdDeviation="2.92334" />
+									<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_88" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_88" result="shape" />
+								</filter>
+							</defs>
+						</svg>
+					</button>
+					<img class="w-full h-full object-cover " src="./img/video-img.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="md:pb-24 pb-16 md:pt-24 pt-16 bg-ai-custom-blue relative">
+		<div class="max-w-7xl mx-auto  px-5 relative">
+			<div class="bg-ai-blue-blur  w-72 h-72 absolute -top-28 right-0 xl:-right-64 blur-pink">
+			</div>
+		</div>
+		<div class="max-w-7xl mx-auto md:mb-28 mb-8 px-5 -mt-48">
+			<div
+				class="bg-contact-gradient rounded-xl pt-5 md:pt-16 pl-3 pr-3 md:pl-24 md:pr-22 md:pb-16 pb-4 flex items-center gap-4 justify-between flex-col md:flex-row ">
+				<div class="text-center md:text-left">
+					<h3 class="font-medium md:text-40 md:mb-2 text-white opacity-90 capitalize text-xl mb-3">Get
+						started with Dojo AI
+					</h3>
+					<p class="text-white opacity-60 text-base md:max-w-full max-w-xs">Schedule today a meeting to see
+						how we can help deploy
+						your
+						AI strategy.
+					</p>
+				</div>
+				<a href="#"
+					class=" hover:opacity-80 active:opacity-60 transition ease-linear whitespace-nowrap text-ai-custom-purple bg-white border font-medium border-ai-white-300 md:py-4 px-8 rounded-full md:text-xl w-full sm:w-auto block text-center py-2 text-sm ">Contact
+					Us</a>
+			</div>
+		</div>
+		<div
+			class="accordion relative z-10 max-w-7xl px-5 mx-auto md:flex md:flex-wrap items-start justify-between gap-10 space-y-10 md:space-y-0 pb-3">
+			<img class="md:w-20 w-32 md:mx-0 mx-auto mb-8 object-cover" src="./img/logo.png" alt="">
+
+			<div class="accordion-wrapper flex flex-col items-center md:items-start gap-8 md:!gap-5">
+				<h3 class="text-sm text-white/30 hidden md:block uppercase">Quick Links</h3>
+				<div
+					class="accordionBtn text-sm uppercase text-white flex md:items-start items-center gap-3 cursor-pointer md:hidden">
+					<span>Quick Links</span>
+					<svg class="md:hidden transition ease-linear" width="17" height="17" viewBox="0 0 17 17" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_262)">
+							<path d="M13.9688 6.10413L8.96302 11.1099L3.9573 6.10413" stroke="white" stroke-width="1.33486"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</g>
+						<defs>
+							<clipPath id="clip0_1_262">
+								<rect width="16.0183" height="16.0183" fill="white"
+									transform="translate(16.9688 0.0974121) rotate(90)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<div class="h-0 md:h-auto overflow-hidden transition-all ease-linear">
+					<ul
+						class="flex text-center md:text-left flex-col gap-5 md:rounded-none rounded-lg md:border-none border border-white border-opacity-20 bg-[#120F2C]/50 md:bg-transparent  pt-6 md:pt-0 md:px-0  px-8 pb-5 md:h-auto">
+						<li>
+							<a class="md:text-sm text-base text-white opacity-70 hover:opacity-80 active:opacity-60 transition ease-linear"
+								href="#">Home</a>
+						</li>
+						<li>
+							<a class="md:text-sm text-base text-white opacity-70 hover:opacity-80 active:opacity-60 transition ease-linear"
+								href="#">Products</a>
+						</li>
+						<li>
+							<a class="md:text-sm text-base text-white opacity-70 hover:opacity-80 active:opacity-60 transition ease-linear"
+								href="#">Blogs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="accordion-wrapper flex flex-col items-center md:items-start gap-8 md:!gap-5">
+				<h3 class="text-sm text-white/30 hidden md:block uppercase">Products</h3>
+				<div
+					class="accordionBtn text-sm uppercase text-white flex md:items-start items-center gap-3 cursor-pointer md:hidden">
+					<span>Products</span>
+					<svg class="md:hidden transition ease-linear" width="17" height="17" viewBox="0 0 17 17" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_262)">
+							<path d="M13.9688 6.10413L8.96302 11.1099L3.9573 6.10413" stroke="white" stroke-width="1.33486"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</g>
+						<defs>
+							<clipPath id="clip0_1_262">
+								<rect width="16.0183" height="16.0183" fill="white"
+									transform="translate(16.9688 0.0974121) rotate(90)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<div class="h-0 md:h-auto overflow-hidden transition-all ease-linear">
+					<ul
+						class="flex text-center md:text-left flex-col gap-5 md:rounded-none rounded-lg md:border-none border border-white border-opacity-20 bg-[#120F2C]/50 md:bg-transparent  pt-6 md:pt-0 md:px-0  px-8 pb-5 md:h-auto">
+						<li>
+							<a class="md:text-sm text-base text-white hover:opacity-80 active:opacity-60 transition ease-linear opacity-70"
+								href="#">8 assets</a>
+						</li>
+						<li>
+							<a class="md:text-sm text-base text-white hover:opacity-80 active:opacity-60 transition ease-linear opacity-70"
+								href="#">Stable Dojo</a>
+						</li>
+						<li>
+							<a class="md:text-sm text-base text-white hover:opacity-80 active:opacity-60 transition ease-linear opacity-70"
+								href="#">Magic BrushAI</a>
+						</li>
+						<li>
+							<a class="md:text-sm text-base text-white hover:opacity-80 active:opacity-60 transition ease-linear opacity-70"
+								href="#">Open DreamAI</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="accordion-wrapper flex flex-col items-center md:items-start gap-8 md:!gap-5">
+				<h3 class="text-sm text-white/30 hidden md:block uppercase">Legal</h3>
+				<div
+					class="accordionBtn text-sm uppercase text-white flex md:items-start items-center gap-3 cursor-pointer md:hidden">
+					<span>Legal</span>
+					<svg class="md:hidden transition ease-linear" width="17" height="17" viewBox="0 0 17 17" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_262)">
+							<path d="M13.9688 6.10413L8.96302 11.1099L3.9573 6.10413" stroke="white" stroke-width="1.33486"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</g>
+						<defs>
+							<clipPath id="clip0_1_262">
+								<rect width="16.0183" height="16.0183" fill="white"
+									transform="translate(16.9688 0.0974121) rotate(90)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<div class="h-0 md:h-auto overflow-hidden transition-all ease-linear">
+					<ul
+						class="flex text-center md:text-left flex-col gap-5 md:rounded-none rounded-lg md:border-none border border-white border-opacity-20 bg-[#120F2C]/50 md:bg-transparent  pt-6 md:pt-0 md:px-0  px-8 pb-5 md:h-auto">
+						<li>
+							<a class="md:text-sm text-base text-white hover:opacity-80 active:opacity-60 transition ease-linear opacity-70"
+								href="#">Privacy Policy</a>
+						</li>
+						<li>
+							<a class="md:text-sm text-base text-white hover:opacity-80 active:opacity-60 transition ease-linear opacity-70"
+								href="#">Cookie Policy</a>
+						</li>
+						<li>
+							<a class="md:text-sm text-base text-white hover:opacity-80 active:opacity-60 transition ease-linear opacity-70"
+								href="#">Terms & Condition</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<form class="w-full sm:w-80 lg:w-64 shrink-0 mx-auto md:mx-0">
+				<label class="block text-white text-center md:text-left mb-1 text-sm md:opacity-25 md:mb-4">Newsletter
+					Signup</label>
+				<p class="md:hidden mb-7 text-sm text-white opacity-25  text-center">Subscribe for latest news &
+					updates.
+				</p>
+				<div
+					class="border rounded-full md:border-none border-ai-white-450  md:pl-0 md:block flex items-center justify-between ">
+					<input
+						class="w-full py-2 px-5 rounded-full bg-transparent md:border border-white border-opacity-20  outline-none tetx-base leading-6 text-white text-ai-white-450 md:mb-5"
+						type="email" placeholder="E-mail address">
+					<button class="h-full pr-4 md:hidden hover:opacity-80 active:opacity-60 transition ease-linear">
+						<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.83594 7.10706H15.2958" stroke="white" stroke-width="1.77981" stroke-linecap="square" />
+							<path d="M10.6797 1.60083L16.186 7.10713L10.6797 12.6134" stroke="white" stroke-width="1.77981"
+								stroke-linecap="square" />
+						</svg>
+					</button>
+				</div>
+				<button
+					class="leading-6 rounded-full text-white  bg-btn-gradient text-sm py-2 px-6 hidden md:block hover:opacity-80 active:opacity-60 transition ease-linear">Sign
+					up</button>
+			</form>
+		</div>
+
+		<svg class="absolute bottom-0 left-0 w-full -z-0" height="485" viewBox="0 0 726 485" fill="none"
+			xmlns="http://www.w3.org/2000/svg">
+			<g filter="url(#filter0_f_1_146)">
+				<circle cx="257.185" cy="468.574" r="147.725" fill="#DB00FF" fill-opacity="0.25" />
+			</g>
+			<defs>
+				<filter id="filter0_f_1_146" x="-210.906" y="0.483063" width="936.182" height="936.182"
+					filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+					<feGaussianBlur stdDeviation="160.183" result="effect1_foregroundBlur_1_146" />
+				</filter>
+			</defs>
+		</svg>
+	</footer>
+
+
+
+	<script src='https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/build/three-min.js'></script>
+	<script
+		src='https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/examples/js/SimplexNoise.js'></script>
+	<script src='https://jeromeetienne.github.io/threex.terrain/threex.terrain.js'></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
